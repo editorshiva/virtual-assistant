@@ -46,7 +46,7 @@ function takeCommand(message){
     if(message.includes("hello")||message.includes("hey")){
         speak("हलो सर, मैं आपकी क्या मदद कर सकती हूँ")
     }  
-    else if(message.includes("who are you")||message.includes("tum kaun ho")){
+    else if(message.includes("who are you")||message.includes("tum kaun ho")||message.includes("tumhen kisne banaya hai")){
         speak("मैं किट्टी हूँ, मुझे शिवा सर ने बनाया हे ")
     }
     else if(message.includes("how are you")||message.includes("tum kaisi ho")||message.includes("kaisi ho")){
