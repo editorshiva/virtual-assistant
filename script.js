@@ -56,7 +56,7 @@ function takeCommand(message){
         speak("मेरे बॉस ")
     }
     else if(message.includes("good job")||message.includes("nice")){
-        speak("थैंक्स सर ")
+        speak("थैंक्यू सर ")
     }
     else if(message.includes("shayari")||message.includes("shayari sunao")){
         speak("शायरी प्रस्तुत है इरशाद कीजिये ")
