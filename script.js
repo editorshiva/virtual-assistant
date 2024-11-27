@@ -43,7 +43,7 @@ btn.addEventListener("click",()=>{
 function takeCommand(message){
     btn.style.display="flex"
     voice.style.display="none"
-    if(message.includes("hello")||message.includes("hey")){
+    if(message.includes("hello")||message.includes("hi")){
         speak("हलो सर, मैं आपकी क्या मदद कर सकती हूँ")
     }  
     else if(message.includes("who are you")||message.includes("tum kaun ho")||message.includes("tumhen kisne banaya hai")||message.includes("apko kisne banaya hai")||message.includes("tumhara naam kya hai")||message.includes("apna naam batao")){
@@ -52,11 +52,29 @@ function takeCommand(message){
     else if(message.includes("how are you")||message.includes("tum kaisi ho")||message.includes("kaisi ho")){
         speak("मैं अच्छी हूँ, आप बताइये सर ")
     }
-    else if(message.includes("shiva tiwari kaun hai")){
+    else if(message.includes("Shiva Tiwari kaun hai")){
         speak("मेरे बॉस ")
+    }
+    else if(message.includes("good morning")){
+        speak("गुड मोर्निंग सर ")
+    }
+    else if(message.includes("good evening")){
+        speak("गुड evening सर  ")
+    }
+    else if(message.includes("good night")){
+        speak("गुड नाईट सर  ")
     }
     else if(message.includes("good job")||message.includes("nice")){
         speak("थैंक्यू सर ")
+    }
+    else if(message.includes("kitty")){
+        speak("यस बॉस ")
+    }
+    else if(message.includes("i love you")||message.includes(" love you")){
+        speak("आई लव यू टू")
+    }
+    else if(message.includes("say i love you")||message.includes("i love you bolo")){
+        speak("आई लव यू ")
     }
     else if(message.includes("shayari")||message.includes("shayari sunao")){
         speak("शायरी प्रस्तुत है इरशाद कीजिये ")
@@ -89,12 +107,6 @@ function takeCommand(message){
     else if(message.includes("date")){
     let date=new Date().toLocaleString(undefined,{day:"numeric",month:"short"})
         speak(date)
-    }
-    else if(message.includes("say i love you")||message.includes("i love you bolo")){
-        speak("i love you")
-    }
-    else if(message.includes("kitty")){
-        speak("यस बॉस ")
     }
     else{
         let finalText="मुझे गूगल पर ये मिला " + message.replace("kitty","")||message.replace("kirti","")
