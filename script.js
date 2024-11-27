@@ -52,8 +52,16 @@ function takeCommand(message){
     else if(message.includes("how are you")||message.includes("tum kaisi ho")||message.includes("kaisi ho")){
         speak("मैं अच्छी हूँ, आप बताइये सर ")
     }
-    else if(message.includes("Shiva Tiwari kaun hai")){
+    else if(message.includes("Shiva Tiwari kaun hai")||message.includes("main kaun hu")){
         speak("मेरे बॉस ")
+    }
+    else if(message.includes("aur batao")){
+        speak("और सब बढिया! ")
+        speak("आप कहें तो एक जोक सुनाऊ  ")
+    }
+    else if(message.includes("sunao")){
+        speak("प्रस्तुत है गौर फरमाइएगा ")
+        speak("पब्लिक टॉयलेट में लिखा था दुनिया चांद पर पहुंच गयी और तू यहीं पर बैठा है' पप्पू ने अपना दिमाग लगाया  और नीचे लिख दिया चांद पर पानी नहीं था इसलिए वापस आ गया' ")
     }
     else if(message.includes("good morning")){
         speak("गुड मोर्निंग सर ")
