@@ -59,7 +59,7 @@ function takeCommand(message){
         speak("और सब बढिया! ")
         speak("आप कहें तो एक जोक सुनाऊ  ")
     }
-    else if(message.includes("sunao")){
+    else if(message.includes("joke sunao")){
         speak("प्रस्तुत है गौर फरमाइएगा ")
         speak("पब्लिक टॉयलेट में लिखा था दुनिया चांद पर पहुंच गयी और तू यहीं पर बैठा है' पप्पू ने अपना दिमाग लगाया  और नीचे लिख दिया चांद पर पानी नहीं था इसलिए वापस आ गया' ")
     }
